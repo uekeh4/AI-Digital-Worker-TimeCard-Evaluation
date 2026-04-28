@@ -1,0 +1,21 @@
+record_id,employee_id,week_start,week_end,reported_hours,approved_hours_prior_week,overtime_hours,missed_punches,vms_flag,notes,expected_decision,expected_reason_code
+1,C-1001,1/5/2026,1/11/2026,40,40,0,0,N,,APPROVE,OK
+2,C-1002,1/5/2026,1/11/2026,38,42,0,0,N,Left early on Friday (manager confirmed),APPROVE,OK
+3,C-1003,1/5/2026,1/11/2026,45,40,5,0,N,OT approved by supervisor ticket #A182,APPROVE,OK
+4,C-1004,1/5/2026,1/11/2026,47,41,7,0,N,Overtime worked due to coverage needs,ESCALATE,OVERTIME_JUSTIFICATION_REQUIRED
+5,C-1005,1/5/2026,1/11/2026,0,40,0,0,N,,REJECT,OUT_OF_POLICY_HOURS
+6,C-1006,1/5/2026,1/11/2026,62,39,22,0,N,System shows extra hours; needs review,ESCALATE,OUT_OF_POLICY_HOURS
+7,C-1007,1/5/2026,1/11/2026,41,40,1,1,N,Forgot to punch out once; corrected by manager,ESCALATE,MISSED_PUNCH_REVIEW
+8,C-1008,1/5/2026,1/11/2026,40,40,0,2,N,,ESCALATE,MISSED_PUNCH_REVIEW
+9,C-1009,1/5/2026,1/11/2026,44,44,4,0,Y,VMS sync issue reported,ESCALATE,SYSTEM_RISK
+10,C-1010,1/5/2026,1/11/2026,39,39,0,0,Y,VMS delay but totals look consistent,ESCALATE,SYSTEM_RISK
+11,C-1011,1/12/2026,1/18/2026,36,40,0,0,N,Training day (approved),APPROVE,OK
+12,C-1012,1/12/2026,1/18/2026,43,40,3,0,N,,ESCALATE,OVERTIME_JUSTIFICATION_REQUIRED
+13,C-1013,1/12/2026,1/18/2026,52,40,12,0,N,Approved OT - coverage for weekend shift,APPROVE,OK
+14,C-1014,1/12/2026,1/18/2026,58,40,18,0,N,Worked after-hours due to server down,ESCALATE,SYSTEM_RISK
+15,C-1015,1/12/2026,1/18/2026,40,40,0,0,N,,APPROVE,OK
+16,C-1016,1/12/2026,1/18/2026,41,40,1,0,N,,ESCALATE,OVERTIME_JUSTIFICATION_REQUIRED
+17,C-1017,1/12/2026,1/18/2026,37,37,0,0,N,,APPROVE,OK
+18,C-1018,1/12/2026,1/18/2026,60,40,20,0,N,OT approved - project deadline,APPROVE,OK
+19,C-1019,1/12/2026,1/18/2026,61,40,21,0,N,,ESCALATE,OUT_OF_POLICY_HOURS
+20,C-1020,1/12/2026,1/18/2026,40,40,0,0,N,Candidate credentialing hold impacted schedule,ESCALATE,MISSING_DATA
